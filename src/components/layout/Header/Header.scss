@@ -1,0 +1,26 @@
+@import '../../assets/var';
+
+.header {
+    background-color: $white-color;
+
+    .card {
+        border: none;
+
+        .card-img {
+            margin-left: auto;
+
+        }
+
+        .card-img-overlay {
+            
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid $primary-color;
+            color: $primary-color;
+        }
+
+    }
+
+}

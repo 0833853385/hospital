@@ -1,0 +1,74 @@
+@import "../../../assets/style/var.scss";
+
+.sidebar {
+  // width: 400px;
+  // height: 100vh;
+
+  .profile {
+    position: relative !important;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f0f0;
+      .logout-modal {
+        display: block;
+      }
+    }
+    img {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 0;
+      width: 100%;
+      height: 30px;
+    }
+
+    .logout-modal {
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: -138px;
+      right: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      list-style: none;
+      border-radius: 10px;
+      overflow: hidden;
+      li {
+        padding: 10px 20px;
+
+        &:hover {
+          background-color: #e9e9e9;
+        }
+      }
+    }
+  }
+
+  .list-group {
+    .list-group-item {
+      background-color: transparent;
+      color: var(--primary-text-color);
+      border: none;
+      &:hover {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .isActive {
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+
+  .user-name {
+    color: var(--primary-text-color);
+  }
+}

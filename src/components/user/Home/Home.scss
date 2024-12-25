@@ -1,0 +1,46 @@
+.home {
+  margin-inline: 181px;
+
+  .calendar-wrapper {
+    width: 25%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+
+    .custom-calendar {
+      font-weight: 900;
+      background: transparent;
+      width: 100%;
+      border: none;
+
+      &__tile {
+        border-radius: 12px;
+      }
+    }
+  }
+
+  .notify-temp {
+    cursor: pointer;
+    margin-inline: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    padding: 8px;
+    border-radius: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    animation: slideUp 2s ease-out forwards;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(48px); }
+  to { transform: translateY(0); }
+}

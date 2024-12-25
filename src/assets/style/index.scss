@@ -1,0 +1,68 @@
+@import "./var.scss";
+
+:root {
+  --background-color: #F9FAFB;
+  --primary-text-color: #000;
+  --secondary-text-color: #0069fd;
+  --gray-color: #f7fafc;
+  --primary-color: #0069fd;
+  --white-color: #fff;
+  --light-blue-color: #e6f6fe;
+}
+
+[data-theme="dark"] {
+  --background-color: #000;
+  --primary-text-color: #fff;
+  --secondary-text-color: #0069fd;
+  --border-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.admin {
+  min-height: 100vh;
+  background-color: var(--background-color);
+
+  .sidebar {
+    width: 400px;
+    height: 100%;
+  }
+
+  .content {
+    // box-shadow: 0 0 70px #ebebeb;
+    // height: 100%;
+  }
+}
+
+.user {
+  height: 100vh;
+
+  .content {
+    margin-top: 100px;
+  }
+}
+
+.home-background {
+  background: url(../image/hospital-building.jpg) top center / cover no-repeat;
+  position: relative;
+}
+
+.nav-background {
+  background-color: #fff;
+}
+
+.fw-900 {
+  font-weight: 900;
+}

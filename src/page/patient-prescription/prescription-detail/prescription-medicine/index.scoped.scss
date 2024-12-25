@@ -1,0 +1,174 @@
+// Variables
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$border-color: #dee2e6;
+$hover-bg: #f8f9fa;
+$text-dark: #212529;
+$border-radius: 8px;
+$transition-time: 0.3s;
+
+.prescription-detail {
+    .card {
+        border-radius: $border-radius;
+        transition: box-shadow $transition-time ease;
+        border-color: $border-color;
+        
+        &:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        .card-title {
+            color: $primary-color;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+    
+    .info-group {
+        label {
+            font-size: 0.875rem;
+            color: $secondary-color;
+            margin-bottom: 0.25rem;
+            display: block;
+            font-weight: 500;
+        }
+        
+        p {
+            font-size: 1rem;
+            color: $text-dark;
+            margin-bottom: 1rem;
+            
+            &.fw-bold {
+                font-weight: 600 !important;
+            }
+        }
+    }
+    
+    .table {
+        margin-bottom: 0;
+        
+        th {
+            background-color: $hover-bg;
+            font-weight: 600;
+            border-bottom: 2px solid $border-color;
+            white-space: nowrap;
+            color: $secondary-color;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        td, th {
+            padding: 1rem;
+            vertical-align: middle;
+        }
+        
+        tbody {
+            tr {
+                transition: background-color $transition-time ease;
+                
+                &:hover {
+                    background-color: $hover-bg;
+                }
+                
+                td {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+    
+    .badge {
+        padding: 0.5em 1em;
+        font-weight: 500;
+        font-size: 0.85rem;
+        letter-spacing: 0.3px;
+        
+        &.bg-success {
+            background-color: #198754 !important;
+        }
+    }
+    
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        transition: all $transition-time ease;
+        
+        svg {
+            font-size: 1rem;
+        }
+        
+        &.btn-outline-primary {
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+                transform: translateY(-1px);
+            }
+        }
+        
+        &.btn-primary {
+            &:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(13, 110, 253, 0.25);
+            }
+        }
+        
+        &.btn-link {
+            padding: 0;
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    // Custom scrollbar
+    .table-responsive {
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: $secondary-color;
+            border-radius: 3px;
+            
+            &:hover {
+                background: darken($secondary-color, 10%);
+            }
+        }
+    }
+    
+    // Additional styles for better spacing
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .me-2 {
+        margin-right: 0.75rem !important;
+    }
+    
+    .mt-4 {
+        margin-top: 1.5rem !important;
+    }
+    
+    // Status section
+    .text-muted {
+        color: $secondary-color !important;
+        font-size: 0.9rem;
+    }
+    
+    // Notes section
+    h6.text-muted {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+}

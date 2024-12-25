@@ -1,0 +1,47 @@
+.overview {
+  .header {
+    height: 282px;
+    background: linear-gradient(66deg, #ffffff, #93c5ff, #0067ff);
+
+    img {
+      width: 400px;
+      right: -50px;
+      top: -72px;
+    }
+  }
+
+  .react-calendar {
+    width: 100vh;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+  }
+
+  .read-daily {
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1460672985063-6764ac8b9c74?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+  }
+}
+
+.overview {
+  h2,
+  h4 {
+    color: var(--primary-text-color);
+  }
+
+  .search {
+    input {
+      background-color: var(--background-color);
+      color: var(--primary-text-color);
+      &::placeholder {
+        color: var(--primary-text-color);
+      }
+    }
+
+    .search-icon {
+      background-color: var(--background-color);
+      border: 1px solid var(--border-color);
+      color: var(--primary-text-color);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.patient-records-detail {
+  .infor {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #f8f9fa;
+
+    .list-group-item {
+      background-color: #f8f9fa;
+    }
+  }
+
+  .vital-sign {
+    padding: 16px;
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .card-body{
+        border: none;
+      background-color: #f8f9fa;
+      overflow: hidden;
+
+    }
+  }
+}

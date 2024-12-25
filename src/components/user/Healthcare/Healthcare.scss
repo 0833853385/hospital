@@ -1,0 +1,31 @@
+/* Healthcare.scss */
+
+.healthcare {
+  background-color: #f8f9fa; /* Light background for a clean look */
+  border-radius: 10px; /* Rounded corners for the main container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 100vh; /* Full height of the viewport */
+  .form-control {
+    border: 1px solid #ced4da; /* Border color for inputs */
+    padding: 10px; /* Padding for input fields */
+    height: 100%; /* Make inputs fill the height of their container */
+  }
+  .form-select {
+    padding: 10px; /* Padding for select dropdowns */
+    height: 100%; /* Make select fill the height of its container */
+  }
+  .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border: none; /* Remove border */
+  }
+}
+
+@media (max-width: 768px) {
+  .w-50 {
+    width: 100%; /* Stack elements on smaller screens */
+  }
+
+  .gap-5 {
+    gap: 1rem; /* Reduce gap on smaller screens */
+  }
+}

@@ -1,0 +1,12 @@
+.patient-records {
+  .in-preogress {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #f8f9fa;
+
+    &:hover {
+        background-color: #eff2f5;
+        
+    }
+  }
+}

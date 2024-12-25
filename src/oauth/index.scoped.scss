@@ -1,0 +1,42 @@
+@import "../assets/style/var.scss";
+
+.login-signup {
+  height: 100vh;
+  background: url(../../assets/image/bgrLogin.png) no-repeat center / cover;
+  background-size: 350px 900px;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-content: center; // Center the form horizontally
+}
+
+.form__container {
+  position: relative;
+  animation: mymove 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  background-color: rgba(255, 255, 255, 0.25); // Add background color
+  border-radius: 24px; // Add border radius
+  backdrop-filter: blur(24px); // Add blur effect
+  padding: 32px; // Add padding
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add box shadow
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  .error {
+    color: red;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: -500px;
+  }
+
+  to {
+    left: 0;
+  }
+}
